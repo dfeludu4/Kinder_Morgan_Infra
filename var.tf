@@ -6,5 +6,5 @@ variable "AMI_ID" {
 variable "INSTANCE_TYPE" {
     type = string
     description = "type of EC2 instance"
-    default = "t2.micro"
+    default = "t2.small"
 }
