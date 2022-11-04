@@ -1,4 +1,5 @@
-resource "aws_s3_bucket" "b" {
+resource "aws_s3_bucket" "dijolay" {
+  bucket = "dijoteji_cicd_pipeline"
 
   tags = {
     Name        = "My bucket"
@@ -6,9 +7,7 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
-resource "aws_s3_bucket_public_access_block" "access_good_1" {
-  bucket = aws_s3_bucket.bucket_good_1.id
-
-  block_public_acls   = true
-  block_public_policy = true
+resource "aws_s3_bucket_acl" "example" {
+  bucket = aws_s3_bucket.dijolay.id
+  acl    = "private"
 }
