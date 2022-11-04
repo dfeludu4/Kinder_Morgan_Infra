@@ -42,14 +42,8 @@ pipeline {
                 
                 sh """
                 sudo pip3 install checkov
-                checkov -d . --skip-check CKV_AWS_79
-                checkov -d . --skip-check CKV_AWS_6
-                checkov -d . --skip-check CKV_AWS_19
-                checkov -d . --skip-check CKV_AWS_145
-                checkov -d . --skip-check CKV_AWS_18
-                checkov -d . --skip-check CKV_AWS_144
-                checkov -d . --skip-check CKV_AWS_21
-                checkov -d . --skip-check CKV2_AWS_6
+                checkov -d . --skip-check CKV_AWS_79 --skip-check CKV_AWS_6 --skip-check CKV_AWS_19 --skip-check CKV_AWS_145 --skip-check CKV_AWS_18 --skip-check CKV_AWS_144 --skip-check CKV_AWS_21 --skip-check CKV2_AWS_6
+            
                 """
             }
         }
