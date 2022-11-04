@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "dijolay" {
-  bucket = "dijoteji_cicd_pipeline"
+  bucket = "dijoteji-cicd-pipeline"
 
   tags = {
     Name        = "My bucket"
