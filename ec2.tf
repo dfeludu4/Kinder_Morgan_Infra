@@ -9,6 +9,6 @@ resource "aws_instance" "web" {
   }
 
   tags = {
-    Name = "Kinder_Morgan_Server"
+    Name = "Kinder_Morgan_Infra_Server"
   }
 }
